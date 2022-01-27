@@ -1,0 +1,38 @@
+@import "../variables.scss";
+@import "../../index.scss";
+
+.Footer {
+    background-color: $footercolor;
+
+    .Isi {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 22px;
+
+        .PropertyInfo {
+
+            .FooterLine {
+                height: 6px;
+                width: 100%;
+                background-color: white;
+            }
+
+            .NamadanCopyright {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 21px;
+
+                h1 {
+                    color: white;
+                    font-weight:  map-get($font-weight , "regular");
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

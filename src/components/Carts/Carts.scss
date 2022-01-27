@@ -1,0 +1,145 @@
+@import "../variables.scss";
+@import "../../index.scss";
+
+.Cart {
+    background-color: $carts;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .Isi {
+        
+        .Menu {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .side-carts{
+
+                .Title {
+
+                    h3 {
+                        color: white ;
+                        font-family: 'Raleway';
+                        font-weight: map-get($font-weight , "semibold");
+                    }
+                }
+
+                .isi-carts {
+                    .cart-empty {
+                        h4 {
+                            color: rgb(5, 83, 107) ;
+                            font-family: 'Raleway';
+                            font-weight: map-get($font-weight , "semibold");
+                        }
+                    }
+                    table {
+
+                        margin: auto;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        width: 92%;
+
+                        tr {
+
+                            td {
+                                text-align: center;
+                                color: white;
+                                font-family: 'Raleway';
+                                font-weight: map-get($font-weight , "semibold");
+                                font-size: 16px;
+                                padding: 20px;
+
+                                .img-cart{
+                                    border-radius: 10px;
+                                    background-color: white;
+                                    width: auto;
+                                    height: auto;
+                                    img {
+                                        max-height: 100px;
+                                        max-width: 100px;
+                                    }
+                                }
+                            }
+                        }
+
+                        tr:nth-child(even){
+                            background-color: rgb(26, 201, 143);
+                        }
+
+                        tr:nth-child(odd){
+                            background-color: rgb(16, 136, 96);
+                        }
+
+                    }
+                }
+            }
+
+            .results-carts{
+                background-color: honeydew;
+                border-radius: 10px;
+                height: 180px;
+
+                .isi {
+
+                    .title {
+                        h2 {
+                            color: rgb(82, 69, 69) ;
+                            font-family: 'Raleway';
+                            font-weight: map-get($font-weight , "semibold");
+                        }
+
+                    }
+
+                    .total-harga {
+                        margin-top: 10px;
+                        p {
+                            color: rgb(82, 69, 69) ;
+                            font-family: 'Raleway';
+                            font-weight: map-get($font-weight , "regular");
+                            font-size: 18px;
+                        }
+                    }
+
+                    .btn_confirm {
+                        background-color: $btn-details;
+                        border: none;
+                        border-radius: 6px;
+                        transition-duration: 0.4s;
+                        text-decoration: none;
+                        overflow: hidden;
+                        font-weight:  map-get($font-weight , "semibold");
+                        font-family: "Raleway";
+                        font-size: 15px;
+                        color: white;
+                        padding: 10px;
+                    }
+
+                    .btn_confirm:hover {
+                        background-color: #1d8f65;
+                    }
+
+                    .btn_clear {
+                        background-color: #d31414;
+                        border: none;
+                        border-radius: 6px;
+                        margin-left: 10px;
+                        transition-duration: 0.4s;
+                        text-decoration: none;
+                        overflow: hidden;
+                        font-weight:  map-get($font-weight , "semibold");
+                        font-family: "Raleway";
+                        font-size: 15px;
+                        color: white;
+                        padding: 10px;
+                    }
+
+                    .btn_clear:hover {
+                        background-color: #861212;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

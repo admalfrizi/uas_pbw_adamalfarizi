@@ -1,0 +1,35 @@
+@import "../variables.scss";
+@import "../../index.scss";
+
+.Success {
+    padding-top: 340px;
+    padding-bottom: 220px;
+    background-color: yellowgreen;
+    .Isi {
+        text-align: center;
+        .Tag {
+            h2{
+                color: white ;
+                font-family: 'Raleway';
+                font-weight: map-get($font-weight , "semibold");
+            }
+        }
+
+        .BackToHome {
+            margin-top: 40px;
+            .btn_home {
+                background-color: $btn-details;
+                border: none;
+                border-radius: 6px;
+                transition-duration: 0.4s;
+                text-decoration: none;
+                overflow: hidden;
+                font-weight:  map-get($font-weight , "semibold");
+                font-family: "Raleway";
+                font-size: 15px;
+                color: white;
+                padding: 10px;
+            }
+        }
+    }
+}

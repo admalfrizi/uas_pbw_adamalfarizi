@@ -1,0 +1,73 @@
+@import "../variables.scss";
+@import "../../index.scss";
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    .navbar {
+        background-color: $navcolor !important;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 45px;
+        z-index: 1;
+    
+        .nav-menu {
+    
+            margin-left: 400px;
+            padding-top: 10px;
+    
+            .nav-link {
+                color: white !important;
+                font-family: 'Raleway';
+                font-weight: map-get($font-weight , "semibold");
+                padding-left: 10px;
+                padding-right: 10px;
+                text-decoration: none;
+            }
+
+            .nav-link:hover {
+                color: greenyellow;
+                font-family: 'Raleway';
+                font-weight: map-get($font-weight , "semibold");
+                background-color: $activecolor;
+                border-radius: 20px;
+                padding: 10px;
+                transition-duration: 0.3s;
+                text-decoration: none;
+            }
+            .active {
+                
+                background-color: $activecolor;
+                border-radius: 20px;
+                padding: 10px;
+                text-decoration: none;
+
+                a {
+                    font-family: 'Raleway';
+                    font-weight: map-get($font-weight , "semibold");
+                    color: $fontnavcolor;
+                }
+            }
+    
+            .cart-nav {
+                margin-left: 520px;
+                display: flex;
+                flex-direction: row;
+                padding-top: 10px;
+    
+                .totalitems {
+                    margin-left: 5px;
+                    p {
+                        color: white;
+                        font-family: 'Raleway';
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}

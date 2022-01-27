@@ -1,0 +1,376 @@
+@import "../../variables.scss";
+@import "../../../index.scss";
+
+.Home {
+    .BannerHome {
+        background-color: $bannercolor;
+
+        .Isi {
+            
+            padding-top: 100px;
+
+            .slider {
+
+                height: 469px;
+                margin-top: 117px;
+
+                .prev_btn {
+                    float: left;
+                    z-index: 10;
+                    margin-top: 120px;
+                    margin-right: 60px;
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                .next_btn {
+                    float: right;
+                    margin-top: 120px;
+                    margin-left: 60px;
+                    z-index: 10;
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                .isi-slider{
+
+                    opacity: 0;
+                    transition-duration: 1s ease ;
+
+                    .page{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-bottom: 120px;
+
+                        .BannerTitle {
+
+                            h1 {
+                                color: #ffffff;
+                                font-weight:  map-get($font-weight , "bold");
+                                font-family: "Raleway";
+                                font-style: normal;
+                                font-size: 48px;
+                                margin-bottom: 37px;
+                                width: 80%;
+                            }
+            
+                            p {
+                                width: 70%;
+                                font-size: 24px;
+                                font-weight:  map-get($font-weight , "regular");
+                                font-family: "Raleway";
+                                color: #ffffff;
+                                margin-bottom: 48px;
+                                line-height: 39px;
+                            }
+            
+                            .CariProduk {
+                                background-color: $btn-color;
+                                border: none;
+                                text-decoration: none;
+                                border-radius: 13px;
+                                font-family: 'Raleway';
+                                color: white;
+                                font-weight: map-get($font-weight , "bold");
+                                font-size: 18px;
+                                margin: auto;
+                                transition-duration: 0.4s;
+                                overflow: hidden;
+                                cursor: pointer;
+                            }
+
+                            .CariProduk:hover {
+                                background-color: #338199;
+                            }
+            
+                        }
+            
+                        .BannerImg {
+                            img {
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+
+                .isi-slider.active {
+                    opacity: 1;
+                    transition-duration: 1s;
+                }
+
+            }
+
+        }
+    }
+
+    .Categories {
+        background-color: $categories;
+        .Isi {
+
+            padding-top: 65px;
+            padding-bottom: 78px;
+
+            .CategoriesTitle {
+                h1 {
+                    color: white;
+                    font-weight:  map-get($font-weight , "bold");
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-size: 28px;
+                    text-align: center;
+                }
+            }
+
+            .CategoriesBanner {
+                margin-top: 40px;
+                .categories {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    margin: auto;
+
+                    .card-categories {
+                        background-color: white;
+                        border-radius: 40px;
+                        width: 300px;
+                        height: 300px;
+                        margin-bottom: 20px;
+                        cursor: pointer;
+
+                        .widget-card{
+                            text-align: center;
+                            margin-bottom: 50px;
+                            margin-top: 60px;
+
+                            .title-categories {
+                                margin-top: 20px;
+                                width: auto;
+                            }
+                        }
+                    }
+
+                    .card-categories:hover{
+                        transition-duration: 1s;
+                        transform: scale(1.10);
+                        overflow: hidden;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .NewArrivals {
+        background-color: $newarrivals;
+
+        .Isi {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 65px;
+            padding-bottom: 78px;
+
+            .NewArrivalsTitle {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 37px;
+
+                h1 {
+                    color: $newarrivalsfonttitle;
+                    font-weight:  map-get($font-weight , "bold");
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-size: 28px;
+                    margin-bottom: 37px;
+                }
+
+                .line-title {
+                    height: 6px;
+                    width: 80%;
+                    margin-top: 14px;
+                    margin-bottom: 14px;
+                    background-color: $linecolor;
+                }
+
+            }
+
+            .BannerProduct{
+                .product {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin: auto;
+                    
+                    .card-products {
+                        background-color: white;
+                        border-radius: 12px;
+                        padding-bottom: 24px;
+                        margin-bottom: 30px;
+                        max-width: 247px;
+                        max-height: 367px;
+                        width: auto;
+                        height: auto;
+
+                        .img-products {
+                            
+                            img {
+                                max-width: 247px;
+                                max-height: 188px;
+                                width: auto;
+                                object-fit: fill;
+                            }
+                        }
+
+                        .details-name {
+                            .brand {
+                                font-weight:  map-get($font-weight , "semibold");
+                                font-family: "Raleway";
+                                font-size: 13px;
+                                color: $newarrivalsbrand;
+                            }
+
+                            .name {
+                                font-weight:  map-get($font-weight , "bold");
+                                font-family: "Raleway";
+                                font-size: 18px;
+                                margin-top: 14px;
+                                color: #413838;
+                            }
+                        }
+
+                        .price {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 29px;
+                            margin-top: 14px;
+                            .Rp-tag {
+                                font-weight:  map-get($font-weight , "regular");
+                                font-family: "Raleway";
+                                font-size: 13px;
+                                margin-right: 8px;
+                            }
+
+                            .Rp-values {
+                                font-weight:  map-get($font-weight , "regular");
+                                font-family: "Raleway";
+                                font-size: 13px;
+                            }
+
+                        }
+
+                        .details {
+                            background-color: $btn-details;
+                            border: none;
+                            border-radius: 6px;
+                            transition-duration: 0.4s;
+                            overflow: hidden;
+                            cursor: pointer;
+                            display: flex;
+                            flex-direction: row;
+                            font-weight:  map-get($font-weight , "semibold");
+                            font-family: "Raleway";
+                            font-size: 12px;
+                            color: white;
+                            float: right;
+
+                            img{
+                                margin-top: 4px;
+                                margin-left: 26px;
+                            }
+                        }
+
+                        .details:hover {
+                            background-color: #1d8f65;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .Benefits{
+        background-image: url('../../Image/benefits_bg.png');        
+        .Isi {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 60px;
+
+            .Title {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: space-between;
+
+                .line-title {
+                    height: 6px;
+                    width: 43%;
+                    margin-top: 14px;
+                    margin-bottom: 14px;
+                    background-color: white;
+                }
+
+                .benefits-title {
+                    color: white;
+                    font-weight:  map-get($font-weight , "bold");
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-size: 28px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            .BannerBenefits {
+
+                margin-top: 37px;
+
+                .BannerBenefitsIsi {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    .cards {
+                        background-color: $benefitscolor;
+                        width: 378px;
+                        height: 287px;
+                        border-radius: 25px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        padding-top: 36px;
+
+                        h1 {
+                            color: white;
+                            font-weight:  map-get($font-weight , "bold");
+                            font-family: "Raleway";
+                            font-style: normal;
+                            font-size: 24px;
+                            margin-top: 20px;
+                        }
+                        
+                        p {
+                            color: white;
+                            font-weight:  map-get($font-weight , "regular");
+                            font-family: "Raleway";
+                            font-style: normal;
+                            font-size: 14px;
+                            align-content: center;
+                            width: 70%;
+                            margin-left: 55px;
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+}

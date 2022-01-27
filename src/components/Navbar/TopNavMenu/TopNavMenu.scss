@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+@import "../../../index.scss";
+
+.top-nav {
+    background-color: $topnavmenu !important;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+
+    .container {
+
+        padding-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .notif {
+            margin-top: 5px;
+
+            p{
+                color: white;
+                font-family: 'Raleway';
+                font-weight: map-get($font-weight , "semibold");
+
+            }
+            
+        }
+
+        .wa_item {
+            display: flex;
+            flex-direction: row;
+
+            .wa_icon {
+                margin-right: 16px;
+            }
+
+            .wa_number {
+                color: white;
+                font-family: 'Raleway';
+                font-weight: map-get($font-weight , "bold");
+            }
+        }
+        
+    }
+
+}

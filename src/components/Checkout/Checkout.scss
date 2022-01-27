@@ -1,0 +1,112 @@
+@import "../variables.scss";
+@import "../../index.scss";
+
+.Checkout {
+    background-color: $carts;
+    padding-top: 120px;
+
+    .Title {
+        h2 {
+            color: white ;
+            font-family: 'Raleway';
+            font-weight: map-get($font-weight , "semibold");
+        }
+
+        span {
+            color: white ;
+            font-family: 'Raleway';
+            font-weight: map-get($font-weight , "medium");
+        }
+    }
+
+    .Isi {
+        .Card {
+            border-radius: 10px;
+
+            h6 {
+                font-family: 'Raleway';
+                font-weight: map-get($font-weight , "semibold");
+            }
+
+            input[type=text] {
+                background-color: white;
+            }
+        }
+
+        .Buy{
+            background-color: #009675;
+            border: none;
+            color: white ;
+            font-family: 'Raleway';
+            font-weight: map-get($font-weight , "semibold");
+        }
+        .Buy:hover{
+            background-color: #4ba08d;
+        }
+    }
+
+    .Results-Card {
+        background-color: $box;
+        border-radius: 10px;
+
+        .List-Item {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .Card-Products {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: royalblue;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                padding-right: 20px;
+
+                img {
+                    max-width: 100px;
+                    max-height: 100px;
+                    padding: 10px;
+                }
+
+                .name-brand {
+                    h3 {
+                        margin-top: 30px;
+                        font-family: 'Raleway';
+                        font-weight: map-get($font-weight , "semibold");
+                        font-size: 11px;
+                        color: white;
+                        text-align: center;
+                    }
+                }
+
+                .name-product {
+                    h3 {
+                        font-family: 'Raleway';
+                        font-weight: map-get($font-weight , "semibold");
+                        color: white;
+                        font-size: 11px;
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+                }
+
+                .name-harga {
+                    h3 {
+                        font-family: 'Raleway';
+                        font-weight: map-get($font-weight , "semibold");
+                        color: white;
+                        font-size: 11px;
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Price-Total{
+        background-color: $box;
+        border-radius: 10px;
+    }
+}
